@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Brain Tumor Detection</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+<body>
+    <div class="container">
+        <h1>🧠 Brain Tumor Detection</h1>
+        <p>Upload an MRI scan image to check for a brain tumor.</p>
+
+        <div class="upload-box">
+            <input type="file" id="fileInput" accept="image/*">
+            <label for="fileInput">📂 Choose an Image</label>
+            <div class="preview-container">
+                <img id="previewImage" src="" alt="Image Preview" style="display: none;">
+            </div>
+        </div>
+
+        <button id="predictBtn" disabled>🔍 Predict</button>
+
+        <div id="resultBox" class="hidden">
+            <h2>📝 Prediction Result:</h2>
+            <p id="predictionText"></p>
+            <p id="confidenceText"></p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
